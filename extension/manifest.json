@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "HireFlow - Auto Fill Job Applications",
+  "version": "1.0.0",
+  "description": "Auto-fill job application forms on LinkedIn, Naukri, Indeed and Internshala",
+  "permissions": ["storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/*",
+        "https://www.naukri.com/*",
+        "https://www.indeed.com/*",
+        "https://www.indeed.co.in/*",
+        "https://internshala.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

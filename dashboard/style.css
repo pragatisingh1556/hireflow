@@ -1,0 +1,317 @@
+/* ---- base styles ---- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1A1A2E;
+  color: #E0E0E0;
+}
+
+/* ---- header ---- */
+
+.header {
+  background: #16213E;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #00BCD4;
+}
+
+.header h1 {
+  font-size: 24px;
+  color: #00BCD4;
+}
+
+.header p {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.header-right {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #00BCD4;
+  color: #1A1A2E;
+}
+
+.btn:hover {
+  background: #00ACC1;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #00BCD4;
+  color: #00BCD4;
+}
+
+.btn-outline:hover {
+  background: rgba(0, 188, 212, 0.1);
+}
+
+/* ---- stats cards ---- */
+
+.stats-row {
+  display: flex;
+  gap: 16px;
+  padding: 20px 30px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 120px;
+  background: #16213E;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid #2A2A4A;
+}
+
+.stat-number {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #00BCD4;
+}
+
+.stat-label {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.stat-applied .stat-number {
+  color: #4CAF50;
+}
+
+.stat-interview .stat-number {
+  color: #FF9800;
+}
+
+.stat-rejected .stat-number {
+  color: #F44336;
+}
+
+/* ---- filters ---- */
+
+.filter-row {
+  display: flex;
+  gap: 12px;
+  padding: 0 30px 16px;
+  flex-wrap: wrap;
+}
+
+.filter-row input,
+.filter-row select {
+  padding: 9px 14px;
+  border: 1px solid #2A2A4A;
+  border-radius: 6px;
+  font-size: 13px;
+  outline: none;
+  background: #16213E;
+  color: #E0E0E0;
+}
+
+.filter-row input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.filter-row input::placeholder {
+  color: #666;
+}
+
+.filter-row input:focus,
+.filter-row select:focus {
+  border-color: #00BCD4;
+}
+
+/* ---- job table ---- */
+
+.table-container {
+  padding: 0 30px 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #16213E;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #2A2A4A;
+}
+
+thead {
+  background: #0F3460;
+}
+
+th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 12px;
+  color: #00BCD4;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+td {
+  padding: 12px 16px;
+  font-size: 13px;
+  border-top: 1px solid #2A2A4A;
+  color: #CCC;
+}
+
+tr:hover {
+  background: #1E2A4A;
+}
+
+/* ---- status badges ---- */
+
+.status-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.status-new {
+  background: rgba(0, 188, 212, 0.15);
+  color: #00BCD4;
+}
+
+.status-applied {
+  background: rgba(76, 175, 80, 0.15);
+  color: #4CAF50;
+}
+
+.status-interview {
+  background: rgba(255, 152, 0, 0.15);
+  color: #FF9800;
+}
+
+.status-rejected {
+  background: rgba(244, 67, 54, 0.15);
+  color: #F44336;
+}
+
+/* ---- source badges ---- */
+
+.source-badge {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+}
+
+.source-linkedin {
+  background: #0077B5;
+}
+
+.source-naukri {
+  background: #4A90D9;
+}
+
+.source-indeed {
+  background: #2164F3;
+}
+
+.source-internshala {
+  background: #00A5EC;
+}
+
+/* ---- action buttons ---- */
+
+.action-btn {
+  padding: 4px 10px;
+  border: 1px solid #2A2A4A;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+  background: transparent;
+  color: #CCC;
+  margin-right: 4px;
+}
+
+.action-btn:hover {
+  background: #2A2A4A;
+}
+
+.action-btn.apply-btn {
+  border-color: #00BCD4;
+  color: #00BCD4;
+}
+
+.action-btn.apply-btn:hover {
+  background: #00BCD4;
+  color: #1A1A2E;
+}
+
+/* ---- empty state ---- */
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+  display: none;
+}
+
+.empty-state h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #888;
+}
+
+.empty-state p {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.empty-state code {
+  background: #2A2A4A;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #00BCD4;
+}
+
+/* ---- responsive ---- */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .stats-row {
+    padding: 16px;
+  }
+
+  .filter-row {
+    padding: 0 16px 12px;
+  }
+
+  .table-container {
+    padding: 0 16px 16px;
+    overflow-x: auto;
+  }
+}

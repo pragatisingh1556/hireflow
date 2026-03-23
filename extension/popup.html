@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>HireFlow</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- header -->
+    <div class="header">
+      <h1>HireFlow</h1>
+      <p class="tagline">Auto Fill Job Applications</p>
+    </div>
+
+    <!-- profile form -->
+    <div class="form-section">
+      <h3>Your Details</h3>
+
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" id="fullName" placeholder="eg: Pragati Singh">
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="email" placeholder="eg: pragati@gmail.com">
+      </div>
+
+      <div class="input-group">
+        <label>Phone</label>
+        <input type="tel" id="phone" placeholder="eg: 9876543210">
+      </div>
+
+      <div class="input-group">
+        <label>Current City</label>
+        <input type="text" id="city" placeholder="eg: Bangalore">
+      </div>
+
+      <div class="input-group">
+        <label>College</label>
+        <input type="text" id="college" placeholder="eg: XYZ University">
+      </div>
+
+      <div class="input-group">
+        <label>Degree</label>
+        <input type="text" id="degree" placeholder="eg: B.Tech CSE">
+      </div>
+
+      <div class="input-group">
+        <label>Graduation Year</label>
+        <input type="text" id="gradYear" placeholder="eg: 2025">
+      </div>
+
+      <div class="input-group">
+        <label>Skills (comma separated)</label>
+        <input type="text" id="skills" placeholder="eg: Python, Java, React">
+      </div>
+
+      <div class="input-group">
+        <label>LinkedIn URL</label>
+        <input type="url" id="linkedin" placeholder="eg: linkedin.com/in/yourname">
+      </div>
+
+      <div class="input-group">
+        <label>GitHub URL</label>
+        <input type="url" id="github" placeholder="eg: github.com/yourname">
+      </div>
+    </div>
+
+    <!-- buttons -->
+    <div class="btn-group">
+      <button id="saveBtn" class="btn save-btn">Save Profile</button>
+      <button id="fillBtn" class="btn fill-btn">Auto Fill This Page</button>
+    </div>
+
+    <!-- status message -->
+    <div id="statusMsg" class="status-msg"></div>
+
+    <!-- stats -->
+    <div class="stats">
+      <div class="stat-item">
+        <span id="fillCount">0</span>
+        <span class="stat-label">Forms Filled</span>
+      </div>
+      <div class="stat-item">
+        <span id="saveCount">0</span>
+        <span class="stat-label">Jobs Saved</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

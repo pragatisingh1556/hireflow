@@ -1,0 +1,149 @@
+/* ---- popup styles ---- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  font-family: Arial, sans-serif;
+  background: #1A1A2E;
+  color: #E0E0E0;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* ---- header ---- */
+
+.header {
+  text-align: center;
+  padding: 12px 0;
+  border-bottom: 2px solid #00BCD4;
+  margin-bottom: 16px;
+}
+
+.header h1 {
+  font-size: 20px;
+  color: #00BCD4;
+}
+
+.tagline {
+  font-size: 11px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* ---- form ---- */
+
+.form-section h3 {
+  font-size: 14px;
+  color: #CCC;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  margin-bottom: 8px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 3px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #2A2A4A;
+  border-radius: 5px;
+  font-size: 12px;
+  outline: none;
+  background: #16213E;
+  color: #E0E0E0;
+}
+
+.input-group input::placeholder {
+  color: #555;
+}
+
+.input-group input:focus {
+  border-color: #00BCD4;
+}
+
+/* ---- buttons ---- */
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.btn {
+  flex: 1;
+  padding: 9px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #00BCD4;
+  color: #1A1A2E;
+}
+
+.save-btn:hover {
+  background: #00ACC1;
+}
+
+.fill-btn {
+  background: #4CAF50;
+  color: white;
+}
+
+.fill-btn:hover {
+  background: #43a047;
+}
+
+/* ---- status message ---- */
+
+.status-msg {
+  text-align: center;
+  font-size: 12px;
+  color: #00BCD4;
+  margin-top: 8px;
+  min-height: 18px;
+}
+
+/* ---- stats ---- */
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #2A2A4A;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item span:first-child {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  color: #00BCD4;
+}
+
+.stat-label {
+  font-size: 10px;
+  color: #888;
+}
